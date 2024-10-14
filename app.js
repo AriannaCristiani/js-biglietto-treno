@@ -14,51 +14,46 @@ const distance = prompt ('Inserisci i chilometri da percorrere')
 
 //VISUALIZZAZIONI IN NUMERI INTERI E NON STRINGHE
 const numberUserAge = parseInt (userAge)
-console.log ("La tua età:" , numberUserAge)
+console.log ("La tua età:" , numberUserAge, "anni")
 
 const numberDistance = parseInt (distance)
-console.log ("La distanza che devi percorrere è di km:", numberDistance)
+console.log ("La distanza che devi percorrere è di:", numberDistance, "km")
 
 //PREZZO DEL BIGLIETTO CON TARIFFA BASE
 
 const baseRate = 0.21
-console.log ("Tariffa base al chilometro:", baseRate )
+console.log ("Tariffa base al chilometro:",baseRate, "€")
 
 
 const ticketPrice = baseRate * numberDistance
-console.log ("Prezzo del tuo biglietto:", ticketPrice )
+console.log ("Prezzo del tuo biglietto:",ticketPrice, "€" )
 
 //SCONTO PER GIOVANI UNDER 18
 
 const underEighteen = (ticketPrice * 20) / 100
-console.log (underEighteen)
+console.log ("Sconto per minorenni:-",underEighteen,"€")
 
 const underEighteenTicket = ticketPrice - underEighteen
-console.log (underEighteenTicket)
+// console.log (underEighteenTicket)
 
 let num = underEighteenTicket;
-console.log ("sconto per minorenni:" ,Math.round (num * 100) /100);
+console.log ("Prezzo scontato per minorenni:",Math.round (num * 100) /100, "€" );
 
 
 //SCONTO PER ANZIANI OVER 65
 
 const overSixtyFive = (ticketPrice * 40) / 100
-console.log (overSixtyFive)
+console.log ("Sconto per senor:-",overSixtyFive,"€")
 
 const overSixtyFiveTicket = ticketPrice - overSixtyFive
-console.log (overSixtyFiveTicket)
+// console.log (overSixtyFiveTicket)
 
 let number = overSixtyFiveTicket;
-console.log ( "sconto per senor:", Math.round (number * 100) /100);
+console.log ( "Prezzo scontato per senor:",Math.round (number * 100) /100,"€");
 
 
 //ASSEGNAZIONE PREZZO PER FASCIA DI ETA'
 
-// const minor = userAge <= 18;
-// console.log (minor)
-
-// const over65 = userAge >= 65;
-// console.log (over65)
 
 if ( userAge <= 18){
     console.log ("hai diritto allo sconto del 20% in quanto minorenne")
