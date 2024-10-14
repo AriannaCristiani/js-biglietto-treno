@@ -14,18 +14,19 @@ const distance = prompt ('Inserisci i chilometri da percorrere')
 
 //VISUALIZZAZIONI IN NUMERI INTERI E NON STRINGHE
 const numberUserAge = parseInt (userAge)
-console.log (numberUserAge)
+console.log ("La tua età:" , numberUserAge)
 
 const numberDistance = parseInt (distance)
-console.log (numberDistance)
+console.log ("La distanza che devi percorrere è di km:", numberDistance)
 
 //PREZZO DEL BIGLIETTO CON TARIFFA BASE
 
 const baseRate = 0.21
-console.log (baseRate)
+console.log ("Tariffa base al chilometro:", baseRate )
+
 
 const ticketPrice = baseRate * numberDistance
-console.log (ticketPrice)
+console.log ("Prezzo del tuo biglietto:", ticketPrice )
 
 //SCONTO PER GIOVANI UNDER 18
 
@@ -36,7 +37,8 @@ const underEighteenTicket = ticketPrice - underEighteen
 console.log (underEighteenTicket)
 
 let num = underEighteenTicket;
-console.log (Math.round (num * 100) /100);
+console.log ("sconto per minorenni:" ,Math.round (num * 100) /100);
+
 
 //SCONTO PER ANZIANI OVER 65
 
@@ -47,4 +49,23 @@ const overSixtyFiveTicket = ticketPrice - overSixtyFive
 console.log (overSixtyFiveTicket)
 
 let number = overSixtyFiveTicket;
-console.log (Math.round (number * 100) /100);
+console.log ( "sconto per senor:", Math.round (number * 100) /100);
+
+
+//ASSEGNAZIONE PREZZO PER FASCIA DI ETA'
+
+// const minor = userAge <= 18;
+// console.log (minor)
+
+// const over65 = userAge >= 65;
+// console.log (over65)
+
+if ( userAge <= 18){
+    console.log ("hai diritto allo sconto del 20% in quanto minorenne")
+}
+else if ( userAge >= 65){
+    console.log ("hai diritto allo sconto del 40% in quanto senor")
+}
+else{
+    console.log ("Non hai diritto ad alcuna scontistica")
+}
