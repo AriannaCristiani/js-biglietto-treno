@@ -37,7 +37,7 @@ const underEighteenTicket = ticketPrice - underEighteen
 // console.log (underEighteenTicket)
 
 let num = underEighteenTicket;
-console.log ("Prezzo scontato per minorenni:",Math.round (num * 100) /100, "€" );
+console.log ("Prezzo bilietto per minorenni:",Math.round (num * 100) /100, "€" );
 
 
 //SCONTO PER ANZIANI OVER 65
@@ -49,7 +49,7 @@ const overSixtyFiveTicket = ticketPrice - overSixtyFive
 // console.log (overSixtyFiveTicket)
 
 let number = overSixtyFiveTicket;
-console.log ( "Prezzo scontato per senor:",Math.round (number * 100) /100,"€");
+console.log ( "Prezzo biglietto per senor:",Math.round (number * 100) /100,"€");
 
 
 //ASSEGNAZIONE PREZZO PER FASCIA DI ETA'
