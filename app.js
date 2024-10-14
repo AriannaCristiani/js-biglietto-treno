@@ -27,7 +27,7 @@ console.log (baseRate)
 const ticketPrice = baseRate * numberDistance
 console.log (ticketPrice)
 
-//SCONTO PER MINORENNI
+//SCONTO PER GIOVANI UNDER 18
 
 const underEighteen = (ticketPrice * 20) / 100
 console.log (underEighteen)
@@ -35,3 +35,16 @@ console.log (underEighteen)
 const underEighteenTicket = ticketPrice - underEighteen
 console.log (underEighteenTicket)
 
+let num = underEighteenTicket;
+console.log (Math.round (num * 100) /100);
+
+//SCONTO PER ANZIANI OVER 65
+
+const overSixtyFive = (ticketPrice * 40) / 100
+console.log (overSixtyFive)
+
+const overSixtyFiveTicket = ticketPrice - overSixtyFive
+console.log (overSixtyFiveTicket)
+
+let number = overSixtyFiveTicket;
+console.log (Math.round (number * 100) /100);
