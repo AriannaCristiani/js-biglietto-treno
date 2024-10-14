@@ -18,3 +18,12 @@ console.log (numberUserAge)
 
 const numberDistance = parseInt (distance)
 console.log (numberDistance)
+
+//PREZZO DEL BIGLIETTO CON TARIFFA BASE
+
+const baseRate = 0.21
+console.log (baseRate)
+
+const ticketPrice = baseRate * numberDistance
+console.log (ticketPrice)
+
