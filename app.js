@@ -26,41 +26,41 @@ console.log ("Tariffa base al chilometro:",baseRate, "€")
 
 
 const ticketPrice = baseRate * numberDistance
-console.log ("Prezzo del tuo biglietto:",ticketPrice, "€" )
+//console.log ("Prezzo del tuo biglietto:",ticketPrice, "€" )
 
 //SCONTO PER GIOVANI UNDER 18
 
 const underEighteen = (ticketPrice * 20) / 100
-console.log ("Sconto per minorenni:-",underEighteen,"€")
+//console.log ("Sconto per minorenni:-",underEighteen,"€")
 
 const underEighteenTicket = ticketPrice - underEighteen
 // console.log (underEighteenTicket)
 
 let num = underEighteenTicket;
-console.log ("Prezzo bilietto per minorenni:",Math.round (num * 100) /100, "€" );
+//console.log ("Prezzo bilietto per minorenni:",Math.round (num * 100) /100, "€" );
 
 
 //SCONTO PER ANZIANI OVER 65
 
 const overSixtyFive = (ticketPrice * 40) / 100
-console.log ("Sconto per senor:-",overSixtyFive,"€")
+//console.log ("Sconto per senor:-",overSixtyFive,"€")
 
 const overSixtyFiveTicket = ticketPrice - overSixtyFive
 // console.log (overSixtyFiveTicket)
 
 let number = overSixtyFiveTicket;
-console.log ( "Prezzo biglietto per senor:",Math.round (number * 100) /100,"€");
+//console.log ( "Prezzo biglietto per senor:",Math.round (number * 100) /100,"€");
 
 
 //ASSEGNAZIONE PREZZO PER FASCIA DI ETA'
 
 
 if ( userAge <= 18){
-    console.log ("hai diritto allo sconto del 20% in quanto minorenne")
+    console.log ("Prezzo del tuo biglietto:", underEighteenTicket,"€")
 }
 else if ( userAge >= 65){
-    console.log ("hai diritto allo sconto del 40% in quanto senor")
+    console.log ("Prezzo del tuo biglietto:", overSixtyFiveTicket,"€")
 }
 else{
-    console.log ("Non hai diritto ad alcuna scontistica")
+    console.log ("Prezzo del tuo biglietto:", ticketPrice,"€" )
 }
